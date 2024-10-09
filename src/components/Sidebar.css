@@ -1,0 +1,81 @@
+.sidebar-wrapper{
+position: fixed;
+top: 10%;
+transition: all 0.3s;
+}
+.sidebar{
+    background-color: white;
+    color: black;
+    width: 240px;
+    height: 90vh;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sidebar-dark{
+    background-color: black;
+    color: white;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+}
+
+.sidebar:hover::-webkit-scrollbar {
+    width: 6px; /* Set desired scrollbar width when hovered */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4); /* Customize scrollbar thumb color */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 10px;
+    margin: 0px 15px;
+    gap: 15px;
+    border-radius: 10px;
+    transition: all 0.1s;
+    cursor: pointer;
+    &:hover{
+        transition: all 0.1s;
+        background-color: #aeaeae4e;
+    }
+    & p{
+        font-size: 15px;
+    }
+}
+.seperator{
+    height: 1px;
+    margin: 0px 20px;
+    background-color: rgba(128, 128, 128, 0.488);
+}
+#you{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin: 25px 0px 10px 0px;
+    & h3{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+.sidebar-bottom{
+    margin-top: 20px;
+    padding: 15px;
+    & p{
+            margin-bottom: 20px;
+            color: grey;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: start;
+    }
+}
+#copyright{
+    font-weight: normal;
+}

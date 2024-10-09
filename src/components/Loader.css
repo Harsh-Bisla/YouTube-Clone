@@ -1,0 +1,27 @@
+.spinner{
+    width: 60px;
+    height: 60px;
+    border: 5px solid black;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spinner 0.5s infinite;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+.spinner-dark{
+    border: 5px solid white;
+    border-top: 5px solid black;
+
+}
+@keyframes spinner {
+    from{
+            transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
